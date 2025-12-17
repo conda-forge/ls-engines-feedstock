@@ -1,5 +1,5 @@
 context:
-  version: 0.9.3
+  version: "0.9.4"
 
 package:
   name: ls-engines
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/ls-engines/-/ls-engines-${{ version }}.tgz
-  sha256: 7b0492de3604e209659f846eec767807fc2256bbf523d2981fbded85037fcef4
+  sha256: 24eaf66b1f26d9f81947b344c9672b6035c5824de98115b073dfe7337b458d8a
 
 build:
   number: 0
