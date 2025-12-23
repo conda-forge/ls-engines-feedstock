@@ -17,10 +17,10 @@ pnpm-licenses generate-disclaimer --prod --output-file=third-party-licenses.txt
 mkdir -p ${PREFIX}/bin
 tee ${PREFIX}/bin/ls-engines << EOF
 #!/bin/sh
-exec \${CONDA_PREFIX}/lib/node_modules/ls-engines/bin/ls-engines "\$@"
+exec \${CONDA_PREFIX}/lib/node_modules/ls-engines/bin.mjs "\$@"
 EOF
 chmod +x ${PREFIX}/bin/ls-engines
 
 tee ${PREFIX}/bin/ls-engines.cmd << EOF
-call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\lib\node_modules\ls-engines\bin\ls-engines %*
+call %CONDA_PREFIX%\bin\node %CONDA_PREFIX%\lib\node_modules\ls-engines\bin.mjs %*
 EOF
